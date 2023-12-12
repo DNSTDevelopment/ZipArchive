@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "ZipArchive",
+    name: "SSZipArchive",
     platforms: [
         .iOS("15.5"),
         .tvOS("15.4"),
@@ -13,11 +13,11 @@ let package = Package(
         .macCatalyst("13.0")
     ],
     products: [
-        .library(name: "ZipArchive", type:.dynamic, targets: ["ZipArchive"]),
+        .library(name: "SSZipArchive", type:.dynamic, targets: ["ZipArchive"]),
     ],
     targets: [
         .target(
-            name: "ZipArchive",
+            name: "SSZipArchive",
             path: "SSZipArchive",
             resources: [
                 .process("Supporting Files/PrivacyInfo.xcprivacy")],
