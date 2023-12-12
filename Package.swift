@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "SSZipArchive",
+    name: "ZipArchive",
     platforms: [
         .iOS("15.5"),
         .tvOS("15.4"),
@@ -17,7 +17,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "SSZipArchive",
+            name: "ZipArchive",
             path: "SSZipArchive",
             resources: [
                 .process("Supporting Files/PrivacyInfo.xcprivacy")],
