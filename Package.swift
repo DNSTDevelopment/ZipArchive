@@ -19,7 +19,6 @@ let package = Package(
         .target(
             name: "ZipArchive",
             path: "SSZipArchive",
-            cSettings: [.unsafeFlags(["-enable-library-evolution","-emit-module-interface"])],
             resources: [
                 .process("Supporting Files/PrivacyInfo.xcprivacy")],
             cSettings: [
