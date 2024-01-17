@@ -22,6 +22,7 @@ let package = Package(
             resources: [
                 .process("Supporting Files/PrivacyInfo.xcprivacy")],
             cSettings: [
+                .unsafeFlags(["-enable-library-evolution","-emit-module-interface"]),
                 .define("HAVE_INTTYPES_H"),
                 .define("HAVE_PKCRYPT"),
                 .define("HAVE_STDINT_H"),
