@@ -19,7 +19,6 @@ let package = Package(
         .target(
             name: "ZipArchive",
             path: "SSZipArchive",
-            swiftSettings: [.unsafeFlags(["-enable-library-evolution","-emit-module-interface"])],
             resources: [
                 .process("Supporting Files/PrivacyInfo.xcprivacy")],
             cSettings: [
@@ -32,6 +31,7 @@ let package = Package(
                 .define("ZLIB_COMPAT")
             ],
             linkerSettings: [
+                .unsafeFlags(["-enable-library-evolution","-emit-module-interface"]),
                 .linkedLibrary("z"),
                 .linkedLibrary("iconv"),
                 .linkedFramework("Security"),
