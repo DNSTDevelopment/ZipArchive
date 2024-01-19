@@ -31,7 +31,6 @@ let package = Package(
                 .define("ZLIB_COMPAT")
             ],
             linkerSettings: [
-                .unsafeFlags(["-enable-library-evolution","-emit-module-interface"]),
                 .linkedLibrary("z"),
                 .linkedLibrary("iconv"),
                 .linkedFramework("Security"),
